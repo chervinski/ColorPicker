@@ -1,0 +1,61 @@
+body {
+    background-color: #fbf2e9;
+    font-family: 'Segoe UI', sans-serif;
+}
+h2 {
+    text-align: center;
+}
+form {
+    width: 275px;
+    margin: 0 auto;
+}
+.error {
+	float: right;
+	color: #d11111;
+}
+input, select {
+	display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3px;
+    margin: 2px 0 8px;
+}
+#colors-container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 20px;
+}
+.color-info {
+	padding: 10px 0;
+	margin: 30px 40px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.color-name {
+	font-size: 1.2em;
+}
+.color-type {
+	font-style: italic;
+}
+.color-code {
+	font-weight: bold;
+}
+
+@media screen and (max-width: 1200px)
+{
+	#colors-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+@media screen and (max-width: 900px)
+{
+	#colors-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media screen and (max-width: 600px)
+{
+	#colors-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

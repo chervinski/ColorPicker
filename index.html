@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Color Picker</title>
+		<link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+		<h2>Create new color</h2>
+		<form onsubmit="addColor(event)">
+			<label for="color-name">Name:</label>
+			<span class="error" id="error-color-name"></span>
+			<input type="text" id="color-name"/>
+
+			<label for="color-type">Type:</label>
+			<select id="color-type">
+				<option>RGB</option>
+				<option>RGBA</option>
+				<option>HEX</option>
+			</select>
+
+			<label for="color-code">Code:</label>
+			<span class="error" id="error-color-code"></span>
+			<input type="text" id="color-code"/>
+
+			<input type="submit" value="Save"/>
+		</form>
+		<h2>All colors</h2>
+		<div id="colors-container"></div>
+		<script src="script.js"></script>
+    </body>
+</html>
